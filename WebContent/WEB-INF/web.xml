@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>AjaxApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 페이지 내의 컨트롤 상태 확인 실습 (AjaxTest02) -->
+	<servlet>
+		<servlet-name>AjaxTest02</servlet-name>
+		<servlet-class>com.test.ajax.Test02</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AjaxTest02</servlet-name>
+		<url-pattern>/ajaxtest02.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<!-- 아이디 중복검사 (AjaxTest03) -->
+	<servlet>
+		<servlet-name>AjaxTest03</servlet-name>
+		<servlet-class>com.test.ajax.Test03</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AjaxTest03</servlet-name>
+		<url-pattern>/ajaxtest03.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 아이디 중복검사 (AjaxTest04_1) -->
+	<servlet>
+		<servlet-name>AjaxTest04</servlet-name>
+		<servlet-class>com.test.ajax.Test04_1</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AjaxTest04</servlet-name>
+		<url-pattern>/ajaxtest04.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- 아이디 중복검사 (AjaxTest05) -->
+	<servlet>
+		<servlet-name>AjaxTest05</servlet-name>
+		<servlet-class>com.test.ajax.Test05</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AjaxTest05</servlet-name>
+		<url-pattern>/ajaxtest05.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
